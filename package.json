@@ -4,10 +4,44 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Warning: No tests created yet.\"",
+    "eject": "react-scripts eject"
   },
-  "keywords": ["devops" , "nodejs", "express", "web"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pritamworld/F2023_COMP3104.git"
+  },
+  "keywords": [
+    "devops",
+    "nodejs",
+    "express",
+    "web"
+  ],
   "author": "Igor Tsyupko (101379825)",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pritamworld/F2023_COMP3104/issues"
+  },
+  "homepage": "https://github.com/pritamworld/F2023_COMP3104#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "^5.0.1",
+    "travis": "^0.1.1",
+    "yarn": "^1.13.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
